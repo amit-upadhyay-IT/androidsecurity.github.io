@@ -1,22 +1,41 @@
+# Dependencies
+gems:                [jekyll-paginate]
+#markdown:            redcarpet
+#highlighter:         pygments
+
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
+title:               Android Security
+tagline:             'Musings about Android Security'
+description:         'A website with Android security musings by <a href="https://twitter.com/marcos_placona">Marcos Placona</a>'
+url:                 http://androidsecurity.info
 baseurl:             ''
 paginate:            5
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Marcos Placona
+  url:               https://twitter.com/marcos_placona
+  email:             marcos@twilio.com
 
 # Custom vars
 version:             1.0.0
+
+
+# This website's repo
+github:
+  repo:           https://github.com/mplacona/androidsecurity.github.io
+
+exclude:
+  - templates
+  - LICENSE.md
+  - README.md
+  - LICENSE.lanyon
+  - README.lanyon
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: 
+
+exclude: [vendor]
