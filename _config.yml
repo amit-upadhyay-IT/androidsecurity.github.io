@@ -1,5 +1,5 @@
 # Dependencies
-gems:                [jekyll-paginate]
+#gems:                [jekyll-paginate]
 #markdown:            redcarpet
 #highlighter:         pygments
 
@@ -36,6 +36,6 @@ exclude:
   - README.lanyon
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-53102965-2
 
 exclude: [vendor]
