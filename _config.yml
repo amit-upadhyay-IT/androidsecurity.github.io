@@ -1,7 +1,4 @@
-# Dependencies
-#gems:                [jekyll-paginate]
-#markdown:            redcarpet
-#highlighter:         pygments
+markdown: kramdown
 
 # Permalinks
 permalink:           pretty
@@ -11,9 +8,10 @@ title:               Android Security
 tagline:             'Musings about Android Security'
 description:         'A website with Android security musings by <a href="https://twitter.com/marcos_placona">Marcos Placona</a>'
 url:                 http://androidsecurity.info
+future:              true
 
 # Pagination
-baseurl:             ''
+baseurl:             
 paginate:            5
 
 gems:
