@@ -3,7 +3,14 @@ layout: default
 title: Home
 ---
 <div class="posts">
-  {% for post in paginator.posts %}
+
+  {% assign posts = paginator.posts  | sort: 'categories' %}
+  
+  <!-- 
+    Bring posts back in reverse order so the 
+    sticky post is always at the top 
+  -->
+  {% for post in posts reversed %}
     {% assign sticky = false %}
     {% for cat in post.categories %}
       {% if cat == 'sticky' %}
