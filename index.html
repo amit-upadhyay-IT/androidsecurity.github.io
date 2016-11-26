@@ -33,8 +33,7 @@ title: Home
           <a href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
           </a>
-        </h1>
-        <span class="post-date">{{ post.date | date_to_string }}</span>
+        </h1>        
         {{ post.content }}
       </div>
     {% endunless %}
