@@ -3,8 +3,6 @@ layout: post
 published: true
 title: Certificate Pinning in Android
 ---
-## Certificate Pinning in Android
-
 Certificate pinning is a security mechanism which allows HTTPS websites and applications using HTTPS services to resist impersonation by attackers using mis-issued or otherwise fraudulent certificates.
 
 With certificate pinning it is possible to mitigate or severely reduce the effectiveness of [MiTM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) attacks enabled by spoofing a back-end server’s SSL certificate.
