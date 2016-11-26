@@ -1,5 +1,7 @@
 ---
+layout: post
 published: true
+title: Certificate Pinning in Android
 ---
 ## Certificate Pinning in Android
 
