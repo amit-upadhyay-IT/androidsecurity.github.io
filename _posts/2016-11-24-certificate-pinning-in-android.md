@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Certificate Pinning in Android
 
@@ -91,11 +91,3 @@ A proxy would then return a message saying: `No request was made. Possibly the S
 ![01.png]({{site.baseurl}}/_drafts/01.png)
 
 And now we've pinned our certificate to our code.
-
-
-
-
-
-
-
-
