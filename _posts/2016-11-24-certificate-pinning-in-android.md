@@ -47,7 +47,7 @@ Well... No.
 
 With enough knowledge about proxies (N.B. I have barely just enough), one can intercept that request and see every incoming and outgoing packages... As plain text!
 
-![00.png]({{site.baseurl}}/_drafts/00.png)
+![00.png](/images/00.png)
 
 Now if we change our client slightly we can add certificate pinning to it, which will make it way harder for someone to impersonate our certificate and our app will refuse to make requests through that certificate.
 
@@ -88,6 +88,6 @@ And sure enough, if you run your code again everything should work as expected b
 
 A proxy would then return a message saying: `No request was made. Possibly the SSL certificate was rejected.`.
 
-![01.png]({{site.baseurl}}/_drafts/01.png)
+![01.png](/images/01.png)
 
 And now we've pinned our certificate to our code.
