@@ -8,6 +8,7 @@ title:               Android Security
 tagline:             'Musings about Android Security'
 description:         'A website with Android security musings by <a href="https://twitter.com/marcos_placona">Marcos Placona</a>'
 url:                 http://androidsecurity.info
+baseurl:             /
 future:              true
 
 # Pagination
@@ -17,6 +18,7 @@ paginate:            5
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-assets
 
 # About/contact
 author:
@@ -47,3 +49,6 @@ exclude:
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-53102965-2
 
+# Assets
+sass:
+  style: compressed
