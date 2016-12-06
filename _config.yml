@@ -8,7 +8,7 @@ title:               Android Security
 tagline:             'Musings about Android Security'
 description:         'A website with Android security musings by <a href="https://twitter.com/marcos_placona">Marcos Placona</a>'
 url:                 http://androidsecurity.info
-baseurl:             /
+baseurl:             ""
 future:              true
 
 # Pagination
@@ -45,6 +45,12 @@ exclude:
   - LICENSE.lanyon
   - README.lanyon
   - vendor
+  - _app
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package.json
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-53102965-2
