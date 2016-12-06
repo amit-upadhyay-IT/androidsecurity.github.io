@@ -3,18 +3,12 @@ var autoprefixer    = require('gulp-autoprefixer');
 var gutil           = require('gulp-util');
 var imagemin        = require('gulp-imagemin');
 var pngquant        = require('imagemin-pngquant');
+var download        = require('gulp-download');
 
-var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
-
-/**
- * Build the Jekyll Site
- */
-gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
-        .on('close', done);
+// Get the latest analytics so we donm;t get penalised by Google
+gulp.task('fetch-newest-analytics', function() {
+  return download('https://www.google-analytics.com/analytics.js')
+    .pipe(gulp.dest('public/js'));
 });
 
 // Creates optimized versions of images,
@@ -34,4 +28,4 @@ gulp.task('watch', function () {
     gulp.watch(['images/*']);
 });
 
-gulp.task('default', ['images', 'watch'])
+gulp.task('default', ['images', 'watch', 'fetch-newest-analytics'])

@@ -12,6 +12,7 @@
     "gulp-autoprefixer": "latest",
     "gulp-imagemin": "latest",
     "gulp-rename": "latest",
-    "imagemin-pngquant": "latest"
+    "imagemin-pngquant": "latest",
+    "gulp-download" : "latest"
   }
 }
