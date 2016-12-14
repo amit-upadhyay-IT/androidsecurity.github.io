@@ -4,3 +4,8 @@ div .nav-header{
     font-weight: bold;
     color: red;
 }
+
+.post-meta{
+    font-style: italic;
+    font-size: 15px;
+}

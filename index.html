@@ -2,42 +2,26 @@
 layout: default
 title: Home
 ---
+
+{% capture description %}{% include description.md %}{% endcapture %}
+{{ description | markdownify }}
+
 <div class="posts">
 
-  {% assign posts = paginator.posts  | sort: 'categories' %}
-  
-  <!-- 
-    Bring posts back in reverse order so the 
-    sticky post is always at the top 
-  -->
-  {% for post in posts reversed %}
-    {% assign sticky = false %}
-    {% for cat in post.categories %}
-      {% if cat == 'sticky' %}
-        {% assign sticky = true %}
-        <div class="row">
-          <div class="intro cell cell-12 cell-med-10 cell-centre">
-            <h1 class="post-title">
-              {{ post.title }}
-            </h1>            
-            {{ post.content }}
-          </div>
-        </div>
-      {% endif %}
-    {% endfor %}
+  {% assign posts = paginator.posts %}
 
-    <!-- only show the article if it is NOT sticky -->
-    {% unless sticky %} 
-      <div class="post">
+  {% for post in posts %}
+    <div class="row">
+      <div class="intro cell cell-12 cell-med-10 cell-centre">
         <h1 class="post-title">
           <a href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
           </a>
-        </h1>  
-        <span itemprop="name">by Marcos Placona</span>      
-        {{ post.content }}
+        </h1> 
+        <span itemprop="name" class="post-meta">by <a href="{{ site.author.url }}">{{ site.author.name }}</a></span>             
+        {{ post.excerpt }}
       </div>
-    {% endunless %}
+    </div>
   {% endfor %}
 </div>
 
