@@ -19,7 +19,7 @@ title: Home
           <div class="intro cell cell-12 cell-med-10 cell-centre">
             <h1 class="post-title">
               {{ post.title }}
-            </h1>
+            </h1>            
             {{ post.content }}
           </div>
         </div>
@@ -33,7 +33,8 @@ title: Home
           <a href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
           </a>
-        </h1>        
+        </h1>  
+        <span itemprop="name">by Marcos Placona</span>      
         {{ post.content }}
       </div>
     {% endunless %}
