@@ -58,3 +58,5 @@ google_analytics: UA-53102965-2
 # Assets
 sass:
   style: compressed
+attributes:
+    async: true
