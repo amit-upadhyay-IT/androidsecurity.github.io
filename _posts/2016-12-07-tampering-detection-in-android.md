@@ -44,7 +44,7 @@ That is because the approach above uses string comparison and things can get dec
 
 Usually it's a good idea to store information like `PACKAGE_NAME` in a different class, encrypted or on a remote server. In this case however if a hacker went through the trouble of decompiling our app, they could very easily just delete the bit of logic that checks for the package name.
 
-Effectiveness: <i class="fa fa-battery-quarter">
+<u>Effectiveness:</u> <i class="fa fa-battery-quarter">
 
 ## <a name="published"></a>Check if application has been published without your consent.
 It's very common to have Android applications republished on alternate markets or their `APK`s made available for download.
@@ -89,7 +89,7 @@ With this second level of tampering detection in our app, we make it even harder
 
 Just like the other approach, we are using string comparison and **again** things can get decompiled and modified fairly easily. 
 
-Effectiveness: <i class="fa fa-battery-quarter">
+<u>Effectiveness:</u> <i class="fa fa-battery-quarter">
 
 ## Bonus
 Since we've created a way to check whether the application was downloaded as an APK or from an alternate store, it's only right that we get those two approaches together into one that will check for everything. We can create a method like this in our utility class.
@@ -118,7 +118,7 @@ public boolean isHacked(Context context, String myPackageName, String google, St
 
 And now you just need to call the method `isHacked` from your `onCreate` method in your initial `Activity` to check that your application was renamed or relocated.
 
-Effectiveness: <i class="fa fa-battery-half">
+<u>Effectiveness:</u> <i class="fa fa-battery-half">
 
 ## <i class="fa fa-file-code-o" aria-hidden="true"></i>
 You can see all the code samples shown here in [this repository](https://github.com/mplacona/HelloWorld).
