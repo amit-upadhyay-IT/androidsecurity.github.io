@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Storing your secure information in te NDK
+title: Storing your secure information in the NDK
 ---
 
 Reverse engineering and tampering can be easily accomplished in Android. There are measures you can take to [stop hackers from tampering with your Android applications]({% post_url 2016-12-07-tampering-detection-in-android %}), but ultimately a determined hacker will always have the last say.
