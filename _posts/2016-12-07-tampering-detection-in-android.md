@@ -98,7 +98,7 @@ Since we've created a way to check whether the application was downloaded as an 
 public boolean isHacked(Context context, String myPackageName, String google, String amazon)
 {
   //Renamed?
-  if (context.getPackageName().compareTo(myPackageName != 0){
+  if (context.getPackageName().compareTo(myPackageName) != 0) {
       return true; // BOOM!
   }
 
@@ -119,3 +119,6 @@ public boolean isHacked(Context context, String myPackageName, String google, St
 And now you just need to call the method `isHacked` from your `onCreate` method in your initial `Activity` to check that your application was renamed or relocated.
 
 Effectiveness: <i class="fa fa-battery-half">
+
+## <i class="fa fa-file-code-o" aria-hidden="true"></i>
+You can see all the code samples shown here in [this repository](https://github.com/mplacona/HelloWorld).
