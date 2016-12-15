@@ -126,3 +126,6 @@ While it is still possible to get information stored inside the app, storing it 
 This methodology combined with encryption would make it significantly hard for a malicious user to work out where to get information from and how to use it. A commonly used technique is to also convert the key into hexadecimal as it would make it less obvious when using a hex editor.
 
 <u>Effectiveness:</u> <i class="fa fa-battery-full" aria-hidden="true"></i>
+
+## <i class="fa fa-file-code-o" aria-hidden="true"></i>
+You can see all the code samples shown here in [this repository](https://github.com/mplacona/HelloWorld/tree/SecureJNI).
