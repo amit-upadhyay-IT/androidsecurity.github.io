@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: Storing your secure information in the NDK
+image: /images/android-ndk.png
 ---
 
 Reverse engineering and tampering can be easily accomplished in Android. There are measures you can take to [stop hackers from tampering with your Android applications]({% post_url 2016-12-07-tampering-detection-in-android %}), but ultimately a determined hacker will always have the last say.
@@ -86,7 +87,7 @@ private native String invokeNativeFunction();
 
 Android studio will now complain that the [JNI](https://en.wikipedia.org/wiki/Java_Native_Interface) Function you're trying to call doesn't exist. Let it go ahead and create that function for you.
 
-Change the that function to:
+Change that function to:
 
 ```cpp
 #include <jni.h>
