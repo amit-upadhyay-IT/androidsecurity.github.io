@@ -10,6 +10,7 @@ description:         'A website with Android security musings by <a href="https:
 url:                 http://androidsecurity.info
 baseurl:             ""
 future:              true
+port:                4000
 
 # Pagination
 baseurl:             
