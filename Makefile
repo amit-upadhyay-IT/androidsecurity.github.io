@@ -19,4 +19,4 @@ build: clean
 
 clean:
 	@echo "Cleaning site"
-	@rm -rf _site
+	@rm -rf _site/*
