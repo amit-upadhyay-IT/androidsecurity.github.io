@@ -7,7 +7,7 @@ Certificate pinning is a security mechanism which allows HTTPS websites and appl
 
 With certificate pinning it is possible to mitigate or severely reduce the effectiveness of [MiTM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) attacks enabled by spoofing a back-end server’s SSL certificate.
 
-If you are alredy using API's or services with [OkHTTP](http://square.github.io/okhttp/) or any library that uses it, such as [Retrofit](https://square.github.io/retrofit/) or [Picasso](http://square.github.io/picasso/) the good news is that you're already half way there.
+If you are already using API's or services with [OkHTTP](http://square.github.io/okhttp/) or any library that uses it, such as [Retrofit](https://square.github.io/retrofit/) or [Picasso](http://square.github.io/picasso/) the good news is that you're already half way there.
 
 Let's look at the following example from the [documentation](https://github.com/square/okhttp/wiki/Recipes#synchronous-get):
 
