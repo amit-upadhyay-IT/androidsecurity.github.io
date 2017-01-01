@@ -84,7 +84,9 @@ private CertificatePinner certificatePinner = new CertificatePinner.Builder()
     .build();
 ```
 
-And sure enough, if you run your code again everything should work as expected but with an added bonus. Our code is now checking that the certificate of the host matches with the one we're expecting. And if it doens't, it will refuse to make a request.
+And sure enough, if you run your code again everything should work as expected
+but with an added bonus. Our code is now checking that the certificate of the
+host matches with the one we're expecting. And if it doesn't, it will refuse to make a request.
 
 A proxy would then return a message saying: `No request was made. Possibly the SSL certificate was rejected.`.
 
